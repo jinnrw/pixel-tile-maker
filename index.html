@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Canvas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>Pixel Tile Maker</div>
+    </header>
+    <main>
+      <aside class="panel-left">
+        <div>
+          <h4>Tools</h4>
+          <div id="tools">
+            <button
+              id="select"
+              class="selected"
+              onclick="setTool(this, 0)"
+            ></button>
+            <button id="eraser" onclick="setTool(this, 1)"></button>
+          </div>
+        </div>
+        <div>
+          <h4>Colors</h4>
+          <div id="color-control" class="controls">
+            <button
+              class="black selected"
+              onclick="setSelection(this, 'color',0)"
+              data-color-index="1"
+            ></button>
+            <button
+              class="white"
+              onclick="setSelection(this, 'color', 1)"
+              data-color-index="0"
+            ></button>
+            <button
+              class="blue"
+              onclick="setSelection(this, 'color', 2)"
+              data-color-index="2"
+            ></button>
+          </div>
+        </div>
+        <div>
+          <h4>Tiles</h4>
+          <div id="tile-control" class="controls">
+            <button
+              onclick="setSelection(this, 'tile', 0)"
+              data-tile-image-index="0"
+            ></button>
+            <button
+              onclick="setSelection(this, 'tile',1)"
+              data-tile-image-index="1"
+            ></button>
+            <button
+              onclick="setSelection(this, 'tile',2)"
+              data-tile-image-index="2"
+            ></button>
+          </div>
+        </div>
+        <div class="clear-canvas">
+          <button onclick="clearCanvas()">Clear Canvas</button>
+        </div>
+      </aside>
+      <div class="app-content">
+        <div id="canvas-wrapper">
+          <canvas id="canvas-bg"></canvas>
+          <canvas id="canvas"></canvas>
+          <canvas id="grid"></canvas>
+        </div>
+        <div id="info">
+          <div>Mouse: <span id="mouseInfo">( , )</span></div>
+          <div>Tile: <span id="tileInfo">( , )</span></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
