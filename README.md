@@ -5,7 +5,7 @@ I started this project after seeing these two big inspirations:
 - [Isomer](https://jdan.github.io/isomer/)  
 
 It's in the very early implementation, a POC, and my goal is to be able to also create isometric tiles or worlds.
-During implemetation, it became cumbersome to keep updating states without any framework, so that's the next step to do. 
+During implemetation, it became cumbersome to update states, data binding, and styling without any frameworks, so that's the next step to do. 
 
 ## Demo
 Visit the [demo](https://pixel-tile-maker.vercel.app/).
