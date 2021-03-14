@@ -19,11 +19,22 @@ const colors = {
   WHITE: "rgb(255,255,255)",
   BLACK: "rgb(0,0,0)",
   BLUE: "#2196f3",
+  LAND: "#D9BCA2",
 };
 const tileImages = [
   "./assets/brick1.png",
   "./assets/brick2.png",
-  "./assets/ground.png",
+  "./assets/ground1.png",
+  "./assets/land1.png",
+  "./assets/land2.png",
+  "./assets/land3.png",
+  "./assets/land4.png",
+  "./assets/land5.png",
+  "./assets/land6.png",
+  "./assets/land7.png",
+  "./assets/land8.png",
+  "./assets/land9.png",
+  "./assets/water1.png",
 ];
 const imgHover = new Image();
 const imgSelected = new Image();
@@ -291,6 +302,9 @@ function setSelectedColor(index) {
       break;
     case 2:
       selectedColor = colors.BLUE;
+      break;
+    case 3:
+      selectedColor = colors.LAND;
       break;
     default:
       break;

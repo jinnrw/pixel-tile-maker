@@ -2,6 +2,7 @@
   --bg-color-light: #555;
   --bg-color-dark: #333;
   --color-blue-light: #2196f3;
+  --color-land: #D9BCA2;
   --text-color: #ccc;
   --header-height: 60px;
 }
@@ -72,7 +73,6 @@ main {
   flex-direction: column;
   background-color: var(--bg-color-light);
   text-align: center;
-  width: 80px;
   padding: 10px;
 }
 
@@ -121,6 +121,8 @@ main {
 .controls button {
   min-height: calc(90px / 3);
   box-shadow: 0 0 0px 1px #000;
+  width: 30px;
+  height: 30px;
 }
 
 .controls button.selected {
@@ -139,6 +141,10 @@ main {
   background-color: var(--color-blue-light);
 }
 
+#color-control button.land {
+  background-color: var(--color-land);
+}
+
 /* Tile Control */
 
 #tile-control button:nth-of-type(1) {
@@ -150,7 +156,47 @@ main {
 }
 
 #tile-control button:nth-of-type(3) {
-  background-image: url(./assets/ground.png);
+  background-image: url(./assets/ground1.png);
+}
+
+#tile-control button:nth-of-type(4) {
+  background-image: url(./assets/land1.png);
+}
+
+#tile-control button:nth-of-type(5) {
+  background-image: url(./assets/land2.png);
+}
+
+#tile-control button:nth-of-type(6) {
+  background-image: url(./assets/land3.png);
+}
+
+#tile-control button:nth-of-type(7) {
+  background-image: url(./assets/land4.png);
+}
+
+#tile-control button:nth-of-type(8) {
+  background-image: url(./assets/land5.png);
+}
+
+#tile-control button:nth-of-type(9) {
+  background-image: url(./assets/land6.png);
+}
+
+#tile-control button:nth-of-type(10) {
+  background-image: url(./assets/land7.png);
+}
+
+#tile-control button:nth-of-type(11) {
+  background-image: url(./assets/land8.png);
+}
+
+#tile-control button:nth-of-type(12) {
+  background-image: url(./assets/land9.png);
+}
+
+#tile-control button:nth-of-type(13) {
+  background-image: url(./assets/water1.png);
 }
 
 .clear-canvas {
